@@ -8,5 +8,3 @@ RUN cd /tmp ; wget https://cmake.org/files/v3.10/cmake-3.10.1.tar.gz
 RUN cd /tmp ; tar xvzf cmake-3.10.1.tar.gz
 RUN cd /tmp/cmake-* ; ./configure && make -j4 && make install
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-
-ENTRYPOINT /bin/bash
